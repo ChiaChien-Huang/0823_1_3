@@ -19,7 +19,7 @@ def save_csv_file(filename:str, data:list) ->bool:
     try:
         with open(filename,mode='w',encoding="utf-8",newline='') as file:
             csv_writer=csv.writer(file)
-            csv_writer.writerow(["國文","英文","數學","自然","社會"])
+            csv_writer.writerow(["姓名","國文","英文","數學","自然","社會"])
             csv_writer.writerows(data)
     except:
         return False
